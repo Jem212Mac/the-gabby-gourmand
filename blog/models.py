@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 STATUS = ((0, "Draft"), (1, "Published"))
+RATING = ((5, "Excellent - 5 Stars"), (4, "Good - 4 Stars"), (3, "Ok - 3 Stars"), (2, "Could Be Better - 2 Stars"), (1, "Poor - 1 Star"), (0, "Really Bad - 0 Stars"))
+COST = ((0, "Low"), (1, "Medium"), (2, "High"))
 
 # Create your models here.
 class Review(models.Model):
@@ -14,7 +16,7 @@ class Review(models.Model):
     content = models.TextField()
     location = models.CharField(max_length=200)
     visited_on = models.DateTimeField()
-    rating = models.CharField(max_length=100)
-    cost = models.CharField(max_length=200)
+    rating = models.IntegerField(choices=RATING, default=5)
+    cost = models.IntegerField(choices=COST, default=0)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
