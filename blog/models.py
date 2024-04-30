@@ -20,3 +20,4 @@ class Review(models.Model):
     cost = models.IntegerField(choices=COST, default=0)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    updated_on = models.DateTimeField(auto_now=True)
