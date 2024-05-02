@@ -1,6 +1,8 @@
 {% load static %}
 
 {% url 'home' as home_url %}
+{% url 'food' as food_url %}
+{% url 'cocktail' as cocktail_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,10 +49,10 @@
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Food Recipes</a>
+                    <a class="nav-link" href="{% url 'food' %}">Food Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cocktail Recipes</a>
+                    <a class="nav-link" href="{% url 'cocktail' %}">Cocktail Recipes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Register / Login</a>
