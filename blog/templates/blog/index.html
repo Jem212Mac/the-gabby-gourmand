@@ -13,16 +13,15 @@
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
+                            <a href="#" class="review-link">
+                                <h2 class="card-title">{{ review.title }}</h2>
+                            </a>
+                            <hr />
                             <div class="image-container">
                                 <div class="image-flash">
                                     <p class="author">Author: {{ review.author }}</p>
                                 </div>
                             </div>
-                            <a href="#" class="review-link">
-                                <h2 class="card-title">{{ review.title }}</h2>
-                            </a>
-
-                            <hr />
                             <p class="card-text text-muted h6">{{ review.created_on}}
                             </p>
                         </div>
