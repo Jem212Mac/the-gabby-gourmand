@@ -13,7 +13,7 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <a href="#" class="review-link">
+                        <a href="{% url 'review_detail' review.slug %}" class="review-link">
                             <h2 class="card-title">{{ review.title }}</h2>
                         </a>
                         <hr />
