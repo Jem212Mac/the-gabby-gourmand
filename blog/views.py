@@ -28,3 +28,23 @@ def review_detail(request, slug):
         "blog/review_detail.html",
         {"review": review},
     )
+
+def food_detail(request, slug):
+    queryset = Recipe.objects.filter(status=1, type=0)
+    recipe = get_object_or_404(queryset, slug=slug)
+
+    return render(
+        request,
+        "blog/food_detail.html",
+        {"recipe": recipe},
+    )
+
+def cocktail_detail(request, slug):
+    queryset = Recipe.objects.filter(status=1, type=1)
+    recipe = get_object_or_404(queryset, slug=slug)
+
+    return render(
+        request,
+        "blog/cocktail_detail.html",
+        {"recipe": recipe},
+    )
