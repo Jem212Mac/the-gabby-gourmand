@@ -32,19 +32,27 @@ def review_detail(request, slug):
 def food_detail(request, slug):
     queryset = Recipe.objects.filter(status=1, type=0)
     recipe = get_object_or_404(queryset, slug=slug)
+    comments = recipe.comments.all().order_by("-created_on")
+    comment_count = recipe.comments.filter(approved=True).count()
 
     return render(
         request,
         "blog/food_detail.html",
-        {"recipe": recipe},
+        {"recipe": recipe,
+        "comments": comments,
+        "comment_count": comment_count,},
     )
 
 def cocktail_detail(request, slug):
     queryset = Recipe.objects.filter(status=1, type=1)
     recipe = get_object_or_404(queryset, slug=slug)
+    comments = recipe.comments.all().order_by("-created_on")
+    comment_count = recipe.comments.filter(approved=True).count()
 
     return render(
         request,
         "blog/cocktail_detail.html",
-        {"recipe": recipe},
+        {"recipe": recipe,
+        "comments": comments,
+        "comment_count": comment_count,},
     )
