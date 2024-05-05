@@ -39,7 +39,6 @@ def food_detail(request, slug):
     comment_count = recipe.comments.filter(approved=True).count()
     
     if request.method == "POST":
-        print('request.POST', request.POST)
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
@@ -69,7 +68,6 @@ def cocktail_detail(request, slug):
     comment_count = recipe.comments.filter(approved=True).count()
 
     if request.method == "POST":
-        print('request.POST', request.POST)
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
@@ -113,3 +111,25 @@ def food_comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('food_detail', args=[slug]))
+
+def cocktail_comment_edit(request, slug, comment_id):
+    """
+    view to edit comments on cocktail recipes
+    """
+    if request.method == "POST":
+
+        queryset = Recipe.objects.filter(status=1, type=1)
+        recipe = get_object_or_404(queryset, slug=slug)
+        comment = get_object_or_404(Comment, pk=comment_id)
+        comment_form = CommentForm(data=request.POST, instance=comment)
+
+        if comment_form.is_valid() and comment.author == request.user:
+            comment = comment_form.save(commit=False)
+            comment.recipe = recipe
+            comment.approved = False
+            comment.save()
+            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+
+    return HttpResponseRedirect(reverse('cocktail_detail', args=[slug]))

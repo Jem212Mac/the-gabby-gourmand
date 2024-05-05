@@ -65,9 +65,9 @@
             This comment is awaiting approval
           </p>
           {% endif %}
-          {% if user.is_authenticated and comment.author == user %}
+            {% if user.is_authenticated and comment.author == user %}
             <button class="btn btn-edit"
-                comment_id="{{ comment.id }}">Edit</button>
+              comment_id="{{ comment.id }}">Edit</button>
             {% endif %}
         </div>
         <!-- For loop ends here -->
@@ -98,5 +98,6 @@
 {% endblock content %}
 
 {% block extras %}
-<script src="{% static 'js/comments.js' %}"></script>
+<script src="{% static 'js/comments.js' %}">
+</script>
 {% endblock %}
