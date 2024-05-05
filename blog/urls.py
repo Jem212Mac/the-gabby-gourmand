@@ -14,4 +14,6 @@ urlpatterns = [
         views.cocktail_comment_edit, name='cocktail_comment_edit'),
     path('food_recipes/<slug:slug>/delete_comment/<int:comment_id>',
          views.food_comment_delete, name='food_comment_delete'),
+    path('cocktail_recipes/<slug:slug>/delete_comment/<int:comment_id>',
+         views.cocktail_comment_delete, name='cocktail_comment_delete'),
 ]
