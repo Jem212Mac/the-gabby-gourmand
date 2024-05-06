@@ -6,9 +6,7 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <!-- Recipe title goes in these h1 tags -->
                 <h1 class="recipe-title">{{ recipe.title }}</h1>
-                <!-- Recipe author goes before the | the recipe's created date goes after -->
                 <p class="recipe-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
@@ -21,13 +19,21 @@
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <!-- The recipe content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
-                    {{ recipe.instructions | safe }}
-                </p>
-            </div>
+          <div class="card-body">
+            <p class="card-text">
+              Ingredients
+              <br>
+              {{ recipe.ingredients | safe }}
+            </p>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Method
+              <br>
+              {{ recipe.instructions | safe }}
+            </p>
+          </div>
+          </div>
         </div>
     </div>
     <!-- Display count of comments -->
