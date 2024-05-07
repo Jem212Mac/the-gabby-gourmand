@@ -15,23 +15,20 @@
     </div>
     <div class="row">
         <div class="col text-right">
-          <!-- Updated on field goes in here -->
-    
-          <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
             <h2>Let's collaborate!</h2>
-            <p>If you are a restaurant owner, and you would like me to review your restaurant,
-                or you wish to collaborate in another way, I would love to hear from you.  Fill out this
+            <p>If you are a restaurant owner, manager, or a fellow foodie,
+                I would love to hear from you. Fill out this
                 form and I will come back to you as soon as I can!</p>
-                <form method="post">
-                    {{ collaborate_form | crispy }}
-                    {% csrf_token %}
-                    <button class="btn btn-secondary"
-                      type="submit">Submit</button>
-                  </form>
+            <form method="post">
+                {{ collaborate_form | crispy }}
+                {% csrf_token %}
+                <button class="btn btn-secondary" type="submit">Submit</button>
+            </form>
         </div>
     </div>
 </div>
