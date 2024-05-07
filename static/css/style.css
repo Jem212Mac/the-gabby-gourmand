@@ -5,6 +5,18 @@ body {
     padding-bottom: 60px;
 }
 
+.review-link, 
+.food-link,
+.cocktail-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.review-link:hover,
+.food-link:hover,
+.cocktail-link:hover {
+    color: #000000;
+}
 
 /* Footer */
 
