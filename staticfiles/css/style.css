@@ -1,6 +1,13 @@
+/* General Styles */
+body {
+    background-color: rgb(217, 237, 194);
+}
+
+/* Card Styles */
+
+
 /* Footer */
 #social-networks {
-    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
     display: flex;
