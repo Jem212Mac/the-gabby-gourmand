@@ -1,12 +1,19 @@
 /* General Styles */
 body {
-    background-color: rgb(217, 237, 194);
+    min-height: 100vh;
+    background-color: rgb(226, 241, 210);
+    padding-bottom: 60px;
 }
 
 /* Card Styles */
 
 
 /* Footer */
+
+.footer {
+    height: 60px;
+}
+
 #social-networks {
     text-align: center;
     padding: 20px 0;
