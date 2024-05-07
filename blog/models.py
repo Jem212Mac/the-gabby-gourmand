@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 RATING = ((5, "Excellent - 5 Stars"), (4, "Good - 4 Stars"), (3, "Ok - 3 Stars"), (2, "Could Be Better - 2 Stars"), (1, "Poor - 1 Star"), (0, "Really Bad - 0 Stars"))
@@ -12,6 +13,7 @@ class Review(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_reviews"
     )
+    featured_image = CloudinaryField('image', default='placeholder')
     restaurant = models.CharField(max_length=200)
     content = models.TextField()
     location = models.CharField(max_length=200)
@@ -33,6 +35,7 @@ class Recipe(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_recipes"
     )
+    featured_image = CloudinaryField('image', default='placeholder')
     ingredients = models.TextField()
     instructions = models.TextField()
     type = models.IntegerField(choices=TYPE, default=0)

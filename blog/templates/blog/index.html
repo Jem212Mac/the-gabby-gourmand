@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
@@ -18,6 +19,13 @@
                         </a>
                         <hr />
                         <div class="image-container">
+                            {% if "placeholder" in review.featured_image.url %}
+                            <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                            alt="placeholder image">
+                            {% else %}
+                            <img class="card-img-top" src=" {{ review.featured_image.url }}"
+                            alt="{{ review.title }}">
+                            {% endif %}
                             <div class="image-flash">
                                 <p class="restaurant">Restaurant: {{ review.restaurant }}</p>
                                 <p class="location">Location: {{ review.location }}</p>
