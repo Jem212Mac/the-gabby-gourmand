@@ -13,7 +13,9 @@ class Review(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_reviews"
     )
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image_1 = CloudinaryField('image', default='placeholder')
+    featured_image_2 = CloudinaryField('image', default='placeholder')
+    featured_image_3 = CloudinaryField('image', default='placeholder')
     restaurant = models.CharField(max_length=200)
     content = models.TextField()
     location = models.CharField(max_length=200)
@@ -35,7 +37,9 @@ class Recipe(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_recipes"
     )
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image_1 = CloudinaryField('image', default='placeholder')
+    featured_image_2 = CloudinaryField('image', default='placeholder')
+    featured_image_3 = CloudinaryField('image', default='placeholder')
     ingredients = models.TextField()
     instructions = models.TextField()
     type = models.IntegerField(choices=TYPE, default=0)
