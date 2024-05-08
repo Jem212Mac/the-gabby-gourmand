@@ -7,16 +7,30 @@
 <div class="container">
     <div class="card mb-3 bg-transparent">
         <div class="row g-0">
-            <div class="col-md-8">
+            <div class="col-md-4">
                 {% if "placeholder" in review.featured_image.url %}
                 <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
                 {% else %}
                 <img src=" {{ review.featured_image_1.url }} " alt="{{ review.title }}">
                 {% endif %}
             </div>
+            <div class="col-md-4">
+                {% if "placeholder" in review.featured_image.url %}
+                <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                {% else %}
+                <img src=" {{ review.featured_image_2.url }} " alt="{{ review.title }}">
+                {% endif %}
+            </div>
+            <div class="col-md-4">
+                {% if "placeholder" in review.featured_image.url %}
+                <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                {% else %}
+                <img src=" {{ review.featured_image_3.url }} " alt="{{ review.title }}">
+                {% endif %}
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card-body">
                     <h1 class="review-title">{{ review.title }}</h1>
                     <p class="review-subtitle">{{ review.author }} | {{ review.created_on }}</p>
