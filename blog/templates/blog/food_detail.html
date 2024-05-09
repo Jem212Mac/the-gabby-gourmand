@@ -5,55 +5,63 @@
 
 <div class="container">
   <div class="row">
-    <div class = "col-12">
-        <div class="card mb-3 bg-transparent">
-            <h1 class="recipe-title">{{ recipe.title }}</h1>
-            <p class="recipe-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
-        </div>
+    <div class="col-12">
+      <div class="card mb-3 bg-transparent">
+        <h1 class="recipe-title">{{ recipe.title }}</h1>
+        <p class="recipe-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
+      </div>
     </div>
   </div>
   <div class="row">
-      <div class = "col-12 col-sm-6 col-md-4">
-          <div class="card mb-3 bg-transparent">
-              {% if "placeholder" in review.featured_image.url %}
-              <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
-              {% else %}
-              <img src=" {{ recipe.featured_image_1.url }} " alt="{{ recipe.title }}">
-              {% endif %}
-          </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card mb-3 bg-transparent">
+        {% if "placeholder" in review.featured_image.url %}
+        <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
+        {% else %}
+        <img src=" {{ recipe.featured_image_1.url }} " alt="{{ recipe.title }}">
+        {% endif %}
       </div>
-      <div class = "col-12 col-sm-6 col-md-4">
-          <div class="card mb-3 bg-transparent">
-              {% if "placeholder" in review.featured_image.url %}
-              <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
-              {% else %}
-              <img src=" {{ recipe.featured_image_2.url }} " alt="{{ recipe.title }}">
-              {% endif %}
-          </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card mb-3 bg-transparent">
+        {% if "placeholder" in review.featured_image.url %}
+        <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
+        {% else %}
+        <img src=" {{ recipe.featured_image_2.url }} " alt="{{ recipe.title }}">
+        {% endif %}
       </div>
-      <div class = "col-12 col-sm-6 col-md-4">
-          <div class="card mb-3 bg-transparent">
-              {% if "placeholder" in review.featured_image.url %}
-              <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
-              {% else %}
-              <img src=" {{ recipe.featured_image_3.url }} " alt="{{ recipe.title }}">
-              {% endif %}
-          </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card mb-3 bg-transparent">
+        {% if "placeholder" in review.featured_image.url %}
+        <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
+        {% else %}
+        <img src=" {{ recipe.featured_image_3.url }} " alt="{{ recipe.title }}">
+        {% endif %}
       </div>
+    </div>
   </div>
   <div class="row">
-      <div class = "col-12">
-          <div class="card mb-3 bg-transparent">
-              <p class="card-text">
-                  {{ recipe.ingredients | safe }}
-                  {{ recipe.instructions | safe }}
-              </p>
-          </div>
+    <div class="col-12">
+      <div class="card mb-3 bg-transparent">
+        <p class="card-text">
+          Ingredients
+          {{ recipe.ingredients | safe }}
+        </p>
       </div>
+    </div>
   </div>
-</div>
-
-    <!-- Display count of comments -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-3 bg-transparent">
+        <p class="card-text">
+          Method
+          {{ recipe.instructions | safe }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Display count of comments -->
   <div class="row">
     <div class="col-12">
       <strong class="text-secondary">
@@ -88,12 +96,10 @@
             This comment is awaiting approval
           </p>
           {% endif %}
-            {% if user.is_authenticated and comment.author == user %}
-            <button class="btn btn-delete btn-danger"
-              comment_id="{{ comment.id }}">Delete</button>
-            <button class="btn btn-edit btn-secondary"
-              comment_id="{{ comment.id }}">Edit</button>
-            {% endif %}
+          {% if user.is_authenticated and comment.author == user %}
+          <button class="btn btn-delete btn-danger" comment_id="{{ comment.id }}">Delete</button>
+          <button class="btn btn-edit btn-secondary" comment_id="{{ comment.id }}">Edit</button>
+          {% endif %}
         </div>
         <!-- For loop ends here -->
         {% endfor %}
@@ -101,42 +107,36 @@
     </div>
     <!-- Create New Comments -->
     <div class="col-md-4 card mb-4 mt-3 bg-transparent">
-        <div class="card-body">
-          {% if user.is_authenticated %}
-          <h3>Leave a comment:</h3>
-          <p>Posting as: {{ user.username }}</p>
-          <form id="commentForm" method="post"
-            style="margin-top: 1.3em;">
-            {{ comment_form | crispy }}
-            {% csrf_token %}
-            <button id="submitButton" type="submit"
-              class="btn btn-secondary">Submit</button>
-          </form>
-          {% else %}
-          <p>Log in to leave a comment</p>
-          {% endif %}
-        </div>
+      <div class="card-body">
+        {% if user.is_authenticated %}
+        <h3>Leave a comment:</h3>
+        <p>Posting as: {{ user.username }}</p>
+        <form id="commentForm" method="post" style="margin-top: 1.3em;">
+          {{ comment_form | crispy }}
+          {% csrf_token %}
+          <button id="submitButton" type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+        {% else %}
+        <p>Log in to leave a comment</p>
+        {% endif %}
       </div>
+    </div>
   </div>
 </div>
 <!-- Delete confirmation modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1"
-  aria-labelledby="deleteModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"
-          id="deleteModalLabel">Delete comment?</h5>
-        <button type="button" class="btn-close"
-          data-bs-dismiss="modal" aria-label="Close"></button>
+        <h5 class="modal-title" id="deleteModalLabel">Delete comment?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         Are you sure you want to delete your comment?
         This action cannot be undone.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"
-          data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <a id="deleteConfirm" href="#" class="btn
           btn-danger">Delete</a>
       </div>
