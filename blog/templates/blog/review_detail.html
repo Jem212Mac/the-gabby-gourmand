@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class = "col-12">
+        <div class="col-12">
             <div class="card mb-3 py-3 px-3 bg-transparent">
                 <h1 class="review-title">{{ review.title }}</h1>
                 <p class="review-subtitle">{{ review.author }} | {{ review.created_on }}</p>
@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="row">
-        <div class = "col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-4">
             <div class="card mb-3 bg-transparent">
                 {% if "placeholder" in review.featured_image.url %}
                 <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
@@ -28,7 +28,7 @@
                 {% endif %}
             </div>
         </div>
-        <div class = "col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-4">
             <div class="card mb-3 bg-transparent">
                 {% if "placeholder" in review.featured_image.url %}
                 <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
@@ -37,7 +37,7 @@
                 {% endif %}
             </div>
         </div>
-        <div class = "col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-4">
             <div class="card mb-3 bg-transparent">
                 {% if "placeholder" in review.featured_image.url %}
                 <img src="{% static 'images/default.jpg' %}" alt="placeholder image">
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="row">
-        <div class = "col-12">
+        <div class="col-12">
             <div class="card mb-3 py-3 px-3 bg-transparent">
                 <p class="card-text">
                     {{ review.content | safe }}

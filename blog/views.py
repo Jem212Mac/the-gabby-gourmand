@@ -6,7 +6,6 @@ from .models import Review, Recipe, Comment
 from .forms import CommentForm
 
 
-# Create your views here.
 class ReviewList(generic.ListView):
     queryset = Review.objects.filter(status=1)
     template_name = "blog/index.html"

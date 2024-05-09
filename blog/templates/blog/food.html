@@ -3,11 +3,8 @@
 
 {% block content %}
 
-<!-- food.html content starts here -->
 <div class="container-fluid">
     <div class="row">
-
-        <!-- Blog Entries -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for recipe in recipe_list %}
@@ -21,10 +18,10 @@
                             <div class="image-container">
                                 {% if "placeholder" in review.featured_image.url %}
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                                alt="placeholder image">
+                                    alt="placeholder image">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ recipe.featured_image_1.url }}"
-                                alt="{{ review.title }}">
+                                    alt="{{ review.title }}">
                                 {% endif %}
                                 <br>
                                 <br>
@@ -51,8 +48,7 @@
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
             <li>
-                <a href="?page={{ page_obj.previous_page_number }}"
-                class="page-link">&laquo; PREVIOUS</a>
+                <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREVIOUS</a>
             </li>
             {% endif %}
             {% if page_obj.has_next %}
@@ -63,5 +59,4 @@
     {% endif %}
 </div>
 
-<!-- food.html content ends here -->
 {% endblock %}
