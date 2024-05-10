@@ -1,8 +1,15 @@
 /* General Styles */
 body {
     min-height: 100vh;
-    background-color: rgb(220, 209, 180);
+    background-color: rgb(225, 225, 225);
     padding-bottom: 60px;
+}
+
+h1 {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 250%;
+    font-weight: 900;
+    color: #445261
 }
 
 .navbar-brand {
@@ -14,8 +21,8 @@ body {
 .review-link,
 .food-link,
 .cocktail-link {
-    text-decoration: none;
-    color: #445261;
+    text-decoration:none;
+    color: #445261
 }
 
 .review-link:hover,
@@ -32,7 +39,6 @@ body {
 }
 
 /* Footer */
-
 .footer {
     height: 60px;
 }
