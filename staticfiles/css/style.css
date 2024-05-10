@@ -6,11 +6,11 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
     font-family: "Reenie Beanie", cursive;
     font-size: 250%;
     font-weight: 900;
-    color: #8f3c6a
+    color: #8f3c6a;
 }
 
 .navbar-brand {
@@ -23,13 +23,7 @@ h1 {
 .food-link,
 .cocktail-link {
     text-decoration:none;
-    color: #8f3c6a
-}
-
-.review-link:hover,
-.food-link:hover,
-.cocktail-link:hover {
-    color: #000000;
+    color: #8f3c6a;
 }
 
 .page-link {
@@ -37,6 +31,28 @@ h1 {
     background-color: #8f3c6a;
     border: none;
     border-radius: 5%;
+}
+
+.review-link:hover,
+.food-link:hover,
+.cocktail-link:hover,
+.page-link:hover {
+    color: #6e3052;
+}
+
+.page-link:hover {
+    color: #ffffff;
+    background-color: #6e3052;
+}
+
+.btn-edit, #submitButton, #closeButton {
+    background-color: #8f3c6a;
+}
+
+.btn-edit:hover, 
+#submitButton:hover, 
+#closeButton:hover {
+    background-color:#6e3052;
 }
 
 /* Footer */

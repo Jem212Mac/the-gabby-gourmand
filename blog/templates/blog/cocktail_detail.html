@@ -43,8 +43,8 @@
   <div class="row">
     <div class="col-12">
       <div class="card mb-3 py-3 px-3 bg-transparent">
+        <h2>Ingredients</h2>
         <p class="card-text">
-          Ingredients
           {{ recipe.ingredients | safe }}
         </p>
       </div>
@@ -53,8 +53,8 @@
   <div class="row">
     <div class="col-12">
       <div class="card mb-3 py-3 px-3 bg-transparent">
+        <h3>Method</h3>
         <p class="card-text">
-          Method
           {{ recipe.instructions | safe }}
         </p>
       </div>
@@ -73,8 +73,8 @@
   </div>
   <!-- Display Comments -->
   <div class="row">
-    <div class="col-md-8 card mb-3  mt-3 bg-transparent">
-      <h3>Comments:</h3>
+    <div class="col-md-8 card mb-3 mt-3 py-3 px-4 bg-transparent">
+      <h4>Comments:</h4>
       <div class="card-body">
         <!-- for loop to iterate through each comment in comments -->
         {% for comment in comments %}
@@ -96,8 +96,8 @@
           </p>
           {% endif %}
           {% if user.is_authenticated and comment.author == user %}
-          <button class="btn btn-delete btn-danger" comment_id="{{ comment.id }}">Delete</button>
           <button class="btn btn-edit btn-secondary" comment_id="{{ comment.id }}">Edit</button>
+          <button class="btn btn-delete btn-danger" comment_id="{{ comment.id }}">Delete</button>
           {% endif %}
         </div>
         <!-- for loop ends here -->
@@ -108,7 +108,7 @@
     <div class="col-md-4 card mb-3 mt-3 bg-transparent">
       <div class="card-body">
         {% if user.is_authenticated %}
-        <h3>Leave a comment:</h3>
+        <h5>Leave a comment:</h5>
         <p>Posting as: {{ user.username }}</p>
         <form id="commentForm" method="post" style="margin-top: 1.3em;">
           {{ comment_form | crispy }}
@@ -135,7 +135,7 @@
         This action cannot be undone.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="closeButton" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <a id="deleteConfirm" href="#" class="btn
           btn-danger">Delete</a>
       </div>
