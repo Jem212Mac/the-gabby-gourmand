@@ -10,7 +10,7 @@ h1 {
     font-family: "Reenie Beanie", cursive;
     font-size: 250%;
     font-weight: 900;
-    color: #445261
+    color: #8f3c6a
 }
 
 .navbar-brand {
@@ -23,7 +23,7 @@ h1 {
 .food-link,
 .cocktail-link {
     text-decoration:none;
-    color: #445261
+    color: #8f3c6a
 }
 
 .review-link:hover,
@@ -34,7 +34,7 @@ h1 {
 
 .page-link {
     color: #ffffff;
-    background-color: #445261;
+    background-color: #8f3c6a;
     border: none;
     border-radius: 5%;
 }
