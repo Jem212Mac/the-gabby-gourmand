@@ -17,11 +17,13 @@
                             <hr />
                             <div class="image-container">
                                 {% if "placeholder" in review.featured_image.url %}
+                                <a href="{% url 'cocktail_detail' recipe.slug %}">
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                                    alt="placeholder image">
+                                    alt="placeholder image"></a>
                                 {% else %}
+                                <a href="{% url 'cocktail_detail' recipe.slug %}">
                                 <img class="card-img-top" src=" {{ recipe.featured_image_1.url }}"
-                                    alt="{{ review.title }}">
+                                    alt="{{ review.title }}"></a>
                                 {% endif %}
                                 <br>
                                 <br>
