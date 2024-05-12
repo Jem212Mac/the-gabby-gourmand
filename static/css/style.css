@@ -6,13 +6,18 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Reenie Beanie", cursive;
     font-size: 250%;
     font-weight: 900;
     color: #8f3c6a;
 }
 
+/* Navbar */
 .navbar-brand {
     font-family: "Glass Antiqua", cursive;
     font-style: normal;
@@ -26,10 +31,11 @@ h1, h2, h3, h4, h5 {
     box-shadow: none;
 }
 
+/* Title Links & Page Links */
 .review-link,
 .food-link,
 .cocktail-link {
-    text-decoration:none;
+    text-decoration: none;
     color: #8f3c6a;
 }
 
@@ -52,14 +58,17 @@ h1, h2, h3, h4, h5 {
     background-color: #6e3052;
 }
 
-.btn-edit, #submitButton, #closeButton {
+/* Buttons */
+.btn-edit,
+#submitButton,
+#closeButton {
     background-color: #8f3c6a;
 }
 
-.btn-edit:hover, 
-#submitButton:hover, 
+.btn-edit:hover,
+#submitButton:hover,
 #closeButton:hover {
-    background-color:#6e3052;
+    background-color: #6e3052;
 }
 
 /* Footer */
