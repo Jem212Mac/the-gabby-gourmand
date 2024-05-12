@@ -6,12 +6,14 @@
   <div class="row">
     <div class="col-12">
       <div class="card mb-3 py-3 px-3 bg-transparent">
+        <!-- Recipe Title & Author-->
         <h1 class="recipe-title">{{ recipe.title }}</h1>
         <p class="recipe-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
       </div>
     </div>
   </div>
   <div class="row">
+    <!-- Recipe Images -->
     <div class="col-12 col-sm-6 col-md-4">
       <div class="card mb-3 bg-transparent">
         {% if "placeholder" in review.featured_image.url %}
@@ -43,6 +45,7 @@
   <div class="row">
     <div class="col-12">
       <div class="card mb-3 py-3 px-3 bg-transparent">
+        <!-- Recipe Ingredients -->
         <h2>Ingredients</h2>
         <p class="card-text">
           {{ recipe.ingredients | safe }}
@@ -53,6 +56,7 @@
   <div class="row">
     <div class="col-12">
       <div class="card mb-3 py-3 px-3 bg-transparent">
+        <!-- Recipe Method -->
         <h3>Method</h3>
         <p class="card-text">
           {{ recipe.instructions | safe }}
@@ -96,8 +100,8 @@
           </p>
           {% endif %}
           {% if user.is_authenticated and comment.author == user %}
-          <button class="btn btn-edit btn-secondary" comment_id="{{ comment.id }}">Edit</button>
-          <button class="btn btn-delete btn-danger" comment_id="{{ comment.id }}">Delete</button>
+          <button class="btn btn-edit btn-secondary" data-comment_id="{{ comment.id }}">Edit</button>
+          <button class="btn btn-delete btn-danger" data-comment_id="{{ comment.id }}">Delete</button>
           {% endif %}
         </div>
         <!-- for loop ends here -->
