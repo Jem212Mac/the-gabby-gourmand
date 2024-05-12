@@ -60,10 +60,12 @@
                         href="{% url 'about' %}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'food' %}">Food Recipes</a>
+                    <a class="nav-link {% if request.path == food_url %}active" aria-current="page{% endif %}"
+                        href="{% url 'food' %}">Food Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'cocktail' %}">Cocktail Recipes</a>
+                    <a class="nav-link {% if request.path == cocktail_url %}active" aria-current="page{% endif %}"
+                        href="{% url 'cocktail' %}">Cocktail Recipes</a>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
