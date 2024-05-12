@@ -4,7 +4,6 @@ from .models import About
 from .forms import CollaborateForm
 
 
-
 class TestAboutView(TestCase):
 
     def setUp(self):
@@ -25,12 +24,13 @@ class TestAboutView(TestCase):
     def test_successful_collaboration_request_submission(self):
         """Test for a user requesting a collaboration"""
         post_data = {
-        'name': 'test name',
-        'email': 'test@email.com',
-        'message': 'test message'
-    }
+            'name': 'test name',
+            'email': 'test@email.com',
+            'message': 'test message'
+        }
         response = self.client.post(reverse('about'), post_data)
         self.assertEqual(response.status_code, 200)
         self.assertIn(
-            b'Collaboration request received! I will respond to you within 3 working days.', response.content)
-        
+            b'''Collaboration request received!
+            I will respond to you within 3 working days.''',
+            response.content)
