@@ -11,15 +11,18 @@ class ReviewList(generic.ListView):
     template_name = "blog/index.html"
     paginate_by = 6
 
+
 class FoodList(generic.ListView):
     queryset = Recipe.objects.filter(status=1, type=0)
     template_name = "blog/food.html"
     paginate_by = 6
 
+
 class CocktailList(generic.ListView):
     queryset = Recipe.objects.filter(status=1, type=1)
     template_name = "blog/cocktail.html"
     paginate_by = 6
+
 
 def review_detail(request, slug):
     queryset = Review.objects.filter(status=1)
@@ -31,12 +34,13 @@ def review_detail(request, slug):
         {"review": review},
     )
 
+
 def food_detail(request, slug):
     queryset = Recipe.objects.filter(status=1, type=0)
     recipe = get_object_or_404(queryset, slug=slug)
     comments = recipe.comments.all().order_by("-created_on")
     comment_count = recipe.comments.filter(approved=True).count()
-    
+
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -47,7 +51,7 @@ def food_detail(request, slug):
             messages.add_message(
                 request, messages.SUCCESS,
                 'Comment submitted and awaiting approval'
-    )
+            )
 
     comment_form = CommentForm()
 
@@ -55,10 +59,11 @@ def food_detail(request, slug):
         request,
         "blog/food_detail.html",
         {"recipe": recipe,
-        "comments": comments,
-        "comment_count": comment_count,
-        "comment_form": comment_form,},
+            "comments": comments,
+            "comment_count": comment_count,
+            "comment_form": comment_form, },
     )
+
 
 def cocktail_detail(request, slug):
     queryset = Recipe.objects.filter(status=1, type=1)
@@ -76,7 +81,7 @@ def cocktail_detail(request, slug):
             messages.add_message(
                 request, messages.SUCCESS,
                 'Comment submitted and awaiting approval'
-    )
+            )
 
     comment_form = CommentForm()
 
@@ -84,10 +89,11 @@ def cocktail_detail(request, slug):
         request,
         "blog/cocktail_detail.html",
         {"recipe": recipe,
-        "comments": comments,
-        "comment_count": comment_count,
-        "comment_form": comment_form,},
+            "comments": comments,
+            "comment_count": comment_count,
+            "comment_form": comment_form, },
     )
+
 
 def food_comment_edit(request, slug, comment_id):
     """
@@ -107,9 +113,11 @@ def food_comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(
+                request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('food_detail', args=[slug]))
+
 
 def cocktail_comment_edit(request, slug, comment_id):
     """
@@ -129,9 +137,11 @@ def cocktail_comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(
+                request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('cocktail_detail', args=[slug]))
+
 
 def food_comment_delete(request, slug, comment_id):
     """
@@ -145,9 +155,11 @@ def food_comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('food_detail', args=[slug]))
+
 
 def cocktail_comment_delete(request, slug, comment_id):
     """
@@ -161,6 +173,7 @@ def cocktail_comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('cocktail_detail', args=[slug]))

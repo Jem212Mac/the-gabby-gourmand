@@ -2,6 +2,7 @@ from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 from .models import Review, Recipe, Comment
 
+
 @admin.register(Review)
 class ReviewAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'author', 'status', 'created_on')
@@ -10,6 +11,7 @@ class ReviewAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content',)
 
+
 @admin.register(Recipe)
 class RecipeAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'type', 'author', 'status', 'created_on')
@@ -17,5 +19,6 @@ class RecipeAdmin(SummernoteModelAdmin):
     list_filter = ('status', 'author', 'type', 'created_on',)
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('ingredients', 'instructions')
+
 
 admin.site.register(Comment)

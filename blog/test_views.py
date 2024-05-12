@@ -4,6 +4,7 @@ from django.test import TestCase
 from .forms import CommentForm
 from .models import Recipe
 
+
 class TestFoodDetailViews(TestCase):
 
     def setUp(self):
@@ -12,8 +13,10 @@ class TestFoodDetailViews(TestCase):
             password="myPassword",
             email="test@test.com"
         )
-        self.recipe = Recipe(title="Blog title", author=self.user, 
-            slug="blog-title", ingredients="Blog ingredients", instructions="Blog instructions", type = "0", status=1)
+        self.recipe = Recipe(
+            title="Blog title", author=self.user,
+            slug="blog-title", ingredients="Blog ingredients",
+            instructions="Blog instructions", type="0", status=1)
         self.recipe.save()
 
     def test_render_food_detail_page_with_comment_form(self):
@@ -41,6 +44,7 @@ class TestFoodDetailViews(TestCase):
             response.content
         )
 
+
 class TestCocktailDetailViews(TestCase):
 
     def setUp(self):
@@ -49,8 +53,10 @@ class TestCocktailDetailViews(TestCase):
             password="myPassword",
             email="test@test.com"
         )
-        self.recipe = Recipe(title="Blog title", author=self.user, 
-            slug="blog-title", ingredients="Blog ingredients", instructions="Blog instructions", type = "1", status=1)
+        self.recipe = Recipe(
+            title="Blog title", author=self.user,
+            slug="blog-title", ingredients="Blog ingredients",
+            instructions="Blog instructions", type="1", status=1)
         self.recipe.save()
 
     def test_render_cocktail_detail_page_with_comment_form(self):
