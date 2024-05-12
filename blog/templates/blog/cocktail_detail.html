@@ -46,10 +46,10 @@
     <div class="col-12">
       <div class="card mb-3 py-3 px-3 bg-transparent">
         <!-- Recipe Ingredients -->
-        <h2>Ingredients</h2>
-        <p class="card-text">
+        <article class="card-text">
+          <h2>Ingredients</h2>
           {{ recipe.ingredients | safe }}
-        </p>
+        </article>
       </div>
     </div>
   </div>
@@ -57,10 +57,10 @@
     <div class="col-12">
       <div class="card mb-3 py-3 px-3 bg-transparent">
         <!-- Recipe Method -->
-        <h3>Method</h3>
-        <p class="card-text">
+        <article class="card-text">
+          <h3>Method</h3>
           {{ recipe.instructions | safe }}
-        </p>
+        </article>
       </div>
     </div>
   </div>
