@@ -4,7 +4,7 @@ from .models import CollaborateRequest
 
 class CollaborateForm(forms.ModelForm):
     """
-    Form for users to request collaboration 
+    Form for users to request collaboration
     """
     class Meta:
         model = CollaborateRequest
