@@ -101,8 +101,8 @@
           </p>
           {% endif %}
           {% if user.is_authenticated and comment.author == user %}
-          <button class="btn btn-edit btn-secondary" comment_id="{{ comment.id }}">Edit</button>
-          <button class="btn btn-delete btn-danger" comment_id="{{ comment.id }}">Delete</button>
+          <button class="btn btn-edit btn-secondary" data-comment_id="{{ comment.id }}">Edit</button>
+          <button class="btn btn-delete btn-danger" data-comment_id="{{ comment.id }}">Delete</button>
           {% endif %}
         </div>
         <!-- For loop ends here -->
