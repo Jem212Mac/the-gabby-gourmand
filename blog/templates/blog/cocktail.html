@@ -3,8 +3,10 @@
 
 {% block content %}
 
+<!-- cocktail.html content starts -->
 <div class="container-fluid">
     <div class="row">
+        <!-- Blog Entries -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for recipe in recipe_list %}
@@ -14,16 +16,16 @@
                             <a href="{% url 'cocktail_detail' recipe.slug %}" class="cocktail-link">
                                 <h1 class="card-title">{{ recipe.title }}</h1>
                             </a>
-                            <hr />
+                            <hr>
                             <div class="image-container">
                                 {% if "placeholder" in review.featured_image.url %}
                                 <a href="{% url 'cocktail_detail' recipe.slug %}">
-                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                                    alt="placeholder image"></a>
+                                    <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                        alt="placeholder image"></a>
                                 {% else %}
                                 <a href="{% url 'cocktail_detail' recipe.slug %}">
-                                <img class="card-img-top" src=" {{ recipe.featured_image_1.url }}"
-                                    alt="{{ review.title }}"></a>
+                                    <img class="card-img-top" src=" {{ recipe.featured_image_1.url }}"
+                                        alt="{{ review.title }}"></a>
                                 {% endif %}
                                 <br>
                                 <br>
@@ -31,7 +33,7 @@
                                     <p class="author">Author: {{ recipe.author }}</p>
                                 </div>
                             </div>
-                            <p class="card-text text-muted h6">{{ recipe.created_on}}
+                            <p class="card-text fst-italic">{{ recipe.created_on}}
                             </p>
                         </div>
                     </div>
@@ -41,7 +43,6 @@
             <div class="row">
                 {% endif %}
                 {% endfor %}
-
             </div>
         </div>
     </div>
@@ -54,11 +55,13 @@
             </li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+            <li>
+                <a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a>
+            </li>
             {% endif %}
         </ul>
     </nav>
     {% endif %}
 </div>
-
+<!-- cocktail.html content ends -->
 {% endblock %}
