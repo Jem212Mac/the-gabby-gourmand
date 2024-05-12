@@ -25,6 +25,14 @@ class CocktailList(generic.ListView):
 
 
 def review_detail(request, slug):
+    """
+    Displays an individual instance of :model:`blog.Review`.
+    **Context**
+    ``review``
+        An instance of :model:`blog.Review`.
+    **Template:**
+    :template:`blog/review_detail.html`
+    """
     queryset = Review.objects.filter(status=1)
     review = get_object_or_404(queryset, slug=slug)
 
@@ -36,6 +44,20 @@ def review_detail(request, slug):
 
 
 def food_detail(request, slug):
+    """
+    Displays an individual instance of :model:`blog.Recipe`.
+    **Context**
+    ``recipe``
+        An instance of :model:`blog.Recipe`.
+    ``comments``
+        All approved comments related to the recipe.
+    ``comment_count``
+        A count of approved comments related to the recipe.
+    ``comment_form``
+        An instance of :form:`blog.CommentForm`.
+    **Template:**
+    :template:`blog/food_detail.html`
+    """
     queryset = Recipe.objects.filter(status=1, type=0)
     recipe = get_object_or_404(queryset, slug=slug)
     comments = recipe.comments.all().order_by("-created_on")
@@ -66,6 +88,20 @@ def food_detail(request, slug):
 
 
 def cocktail_detail(request, slug):
+    """
+    Displays an individual instance of :model:`blog.Recipe`.
+    **Context**
+    ``recipe``
+        An instance of :model:`blog.Recipe`.
+    ``comments``
+        All approved comments related to the recipe.
+    ``comment_count``
+        A count of approved comments related to the recipe.
+    ``comment_form``
+        An instance of :form:`blog.CommentForm`.
+    **Template:**
+    :template:`blog/cocktail_detail.html`
+    """
     queryset = Recipe.objects.filter(status=1, type=1)
     recipe = get_object_or_404(queryset, slug=slug)
     comments = recipe.comments.all().order_by("-created_on")
@@ -97,7 +133,14 @@ def cocktail_detail(request, slug):
 
 def food_comment_edit(request, slug, comment_id):
     """
-    view to edit comments on food recipes
+    Displays an individual comment for edit.
+    **Context**
+    ``recipe``
+        An instance of :model:`blog.Recipe`.
+    ``comment``
+        A single comment related to the recipe.
+    ``comment_form``
+        An instance of :form:`blog.CommentForm`.
     """
     if request.method == "POST":
 
@@ -121,7 +164,14 @@ def food_comment_edit(request, slug, comment_id):
 
 def cocktail_comment_edit(request, slug, comment_id):
     """
-    view to edit comments on cocktail recipes
+    Displays an individual comment for edit.
+    **Context**
+    ``recipe``
+        An instance of :model:`blog.Recipe`.
+    ``comment``
+        A single comment related to the recipe.
+    ``comment_form``
+        An instance of :form:`blog.CommentForm`.
     """
     if request.method == "POST":
 
@@ -145,7 +195,12 @@ def cocktail_comment_edit(request, slug, comment_id):
 
 def food_comment_delete(request, slug, comment_id):
     """
-    view to delete comments on food recipes
+    Delete an individual comment.
+    **Context**
+    ``recipe``
+        An instance of :model:`blog.Recipe`.
+    ``comment``
+        A single comment related to the recipe.
     """
     queryset = Recipe.objects.filter(status=1, type=0)
     recipe = get_object_or_404(queryset, slug=slug)
@@ -163,7 +218,12 @@ def food_comment_delete(request, slug, comment_id):
 
 def cocktail_comment_delete(request, slug, comment_id):
     """
-    view to delete comments on cocktail recipes
+    Delete an individual comment.
+    **Context**
+    ``recipe``
+        An instance of :model:`blog.Recipe`.
+    ``comment``
+        A single comment related to the recipe.
     """
     queryset = Recipe.objects.filter(status=1, type=1)
     recipe = get_object_or_404(queryset, slug=slug)

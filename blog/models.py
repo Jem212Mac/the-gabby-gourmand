@@ -12,6 +12,9 @@ TYPE = ((0, "Food"), (1, "Cocktail"))
 
 
 class Review(models.Model):
+    """
+    Stores a single restaurant review related to :model:`auth.User`.
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -38,6 +41,9 @@ class Review(models.Model):
 
 
 class Recipe(models.Model):
+    """
+    Stores a single recipe related to :model:`auth.User`.
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -61,6 +67,10 @@ class Recipe(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Stores a single comment related to :model:`auth.User`
+    and :model:`blog.recipe`.
+    """
     recipe = models.ForeignKey(
         Recipe, on_delete=models.CASCADE, related_name="comments")
     author = models.ForeignKey(
