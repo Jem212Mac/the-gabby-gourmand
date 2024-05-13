@@ -2,7 +2,21 @@
 
 ## Manual Testing
 
+### User Story Testing
+
 Testing was done throughout site development, for each feature before it was merged into the master file.
+
+User Story [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8)
+
+| Test Case ID | Test Objective | Steps | Expected results | Status | Comments / Screenshots |
+| -------------| ---------------| ----- | --------------   | -------| ---------------------- |
+|       1      | Check that logged in site admin can create a new review post in django admin | Log in to django admin function with site admin credentials & click to add a review.  Add review detail and save. | Review is saved and visible in django admin.| Passed ||
+| 2 | Check that logged in site admin can create a new food recipe post in django admin | Log in to admin function with site admin credentials & click to add a recipe.  Add recipe detail.  Save the recipe with status = 0. | Recipe is saved and visible in django admin | Passed |  |
+| 3 | Check that logged in site admin can create a new cocktail recipe post in django admin | Log in to admin function with site admin credentials & click to add a recipe.  Add recipe detail.  Save the recipe with status = 1. | Recipe is saved and visible in django admin | Passed |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+---
 
 Usability was tested with the below user acceptance testing, sent to new users to ensure testing from different users, on different devices and browsers to ensure issues were caught and where possible fixed during development.
 
@@ -11,14 +25,6 @@ Usability was tested with the below user acceptance testing, sent to new users t
 |-------------|------------------------|------------------|------|-------------|
 | Sign Up     |                        |                  |      |             |
 | 1           |                        |                  |      |             |
-
----
-
-## Testing User Story
-
-| User Story                | Acceptance Criteria     | Image |
-| ------------------------- | --------------- | ----- |
-|                           |                 |       |
 
 ---
 
