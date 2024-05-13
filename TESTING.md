@@ -4,27 +4,27 @@
 
 ### User Story Testing
 
-Testing was done throughout site development, for each feature before it was merged into the master file.
+User story testing was performed throughout site development, for each new feature, before it was merged into the master file.
 
-User Story [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8)
+User Story [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8) and User Story [#9](https://github.com/Jem212Mac/the-gabby-gourmand/issues/9).
 
-| Test Case ID | Test Objective | Steps | Expected results | Status | Comments / Screenshots |
-| -------------| ---------------| ----- | --------------   | -------| ---------------------- |
-|       1      | Check that logged in site admin can create a new review post in django admin | Log in to django admin function with site admin credentials & click to add a review.  Add review detail and save. | Review is saved and visible in django admin.| Passed ||
-| 2 | Check that logged in site admin can create a new food recipe post in django admin | Log in to admin function with site admin credentials & click to add a recipe.  Add recipe detail.  Save the recipe with status = 0. | Recipe is saved and visible in django admin | Passed |  |
-| 3 | Check that logged in site admin can create a new cocktail recipe post in django admin | Log in to admin function with site admin credentials & click to add a recipe.  Add recipe detail.  Save the recipe with status = 1. | Recipe is saved and visible in django admin | Passed |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-
----
-
-Usability was tested with the below user acceptance testing, sent to new users to ensure testing from different users, on different devices and browsers to ensure issues were caught and where possible fixed during development.
-
-
-|     | User Actions           | Expected Results | Y/N | Comments    |
-|-------------|------------------------|------------------|------|-------------|
-| Sign Up     |                        |                  |      |             |
-| 1           |                        |                  |      |             |
+| Test Case ID | Test Objective (based on Acceptance Criteria)                                                                                  | Test Steps                                                                                                                                                           | Expected Results                                            | Status |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ------ |
+| 1            | Check that a logged in site admin can create a new restaurant review in django admin.                                          | Log in to django admin function with site admin credentials & click to add a review.  Add review detail and save.                                                    | Review is saved and visible in django admin.                | Passed |
+| 2            | Check that a logged in site admin can create a new food recipe in django admin.                                                | Log in to django admin function with site admin credentials & click to add a recipe.  Add recipe detail with type = 0 and save.                                      | Review is saved and visible in django admin.                | Passed |
+| 3            | Check that a logged in site admin can create a new cocktail recipe in django admin.                                            | Log in to django admin function with site admin credentials & click to add a recipe.  Add recipe detail with type = 1 and save.                                      | Review is saved and visible in django admin.                | Passed |
+| 4            | Check that a logged in site admin can read and update a review in django admin.                                                | Log in to django admin function with site admin credentials & click on a review to view it.  Make changes to the review and save.                                    | Updated review is saved and visible in django admin.        | Passed |
+| 5            | Check that a logged in site admin can read and update a food recipe in django admin.                                           | Log in to django admin function with site admin credentials & click on a food recipe to view it.  Make changes to the recipe and save.                               | Updated recipe is saved and visible in django admin.        | Passed |
+| 6            | Check that a logged in site admin can read and update a cocktail recipe in django admin.                                       | Log in to django admin function with site admin credentials & click on a cocktail recipe to view it.  Make changes to the recipe and save.                           | Updated recipe is saved and visible in django admin.        | Passed |
+| 7            | Check that a logged in site admin can delete a review post.                                                                    | Log in to django admin function with site admin credentials & click on a review to view it.  Click on delete.                                                        | Review is deleted and is no longer visible in django admin. | Passed |
+| 8            | Check that a logged in site admin can delete a food recipe post.                                                               | Log in to django admin function with site admin credentials & click on a food recipe to view it.  Click on delete.                                                   | Recipe is deleted and is no longer visible in django admin. | Passed |
+| 9            | Check that a logged in site admin can delete a cocktail recipe post.                                                           | Log in to django admin function with site admin credentials & click on a cocktail recipe to view it.  Click on delete.                                               | Recipe is deleted and is no longer visible in django admin. | Passed |
+| 10           | Check that a logged in site admin can create a draft restaurant review in django admin.                                        | Log in to django admin function with site admin credentials & click to add a review.  Add review detail and save as a draft (do not tick published).                 | Recipe is saved as a draft.                                 | Passed |
+| 11           | Check that a logged in site admin can create a draft food recipe in django admin.                                              | Log in to django admin function with site admin credentials & click to add a recipe.  Add recipe detail (with type = 0) and save as a draft (do not tick published). | Recipe is saved as a draft.                                 | Passed |
+| 12           | Check that a logged in site admin can create a draft cocktail recipe in django admin.                                          | Log in to django admin function with site admin credentials & click to add a recipe.  Add recipe detail (with type = 1) and save as a draft (do not tick published). | Recipe is saved as a draft.                                 | Passed |
+| 13           | Check that a logged in site admin can reopen a draft restaurant review, update it, and save it as published with django admin. | Log in to django admin function with site admin credentials & click on a draft review to view it.  Update the review detail, tick published, and save.               | Review is saved as published.                               | Passed |
+| 14           | Check that a logged in site admin can reopen a draft food recipe, update it, and save it as published with django admin.       | Log in to django admin function with site admin credentials & click on a draft food recipe to view it.  Update the recipe detail, tick published, and save.          | Recipe is saved as published.                               | Passed |
+| 15           | Check that a logged in site admin can reopen a draft cocktail recipe, update it, and save it as published with django admin.   | Log in to django admin function with site admin credentials & click on a draft cocktail recipe to view it.  Update the recipe detail, tick published, and save.      | Recipe is saved as published.                               | Passed |
 
 ---
 
