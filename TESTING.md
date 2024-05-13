@@ -142,15 +142,63 @@ User Story [#21](https://github.com/Jem212Mac/the-gabby-gourmand/issues/21).
 
 ---
 
+## Usability / User Acceptance Testing
+
+In addition to the testing I performed throughout the developement process which was primarily based around the user stories and the accpetance criteria (as detailed above), I also performed some exploratory testing based on the following user journeys with the goal of ensuring that the site would meet the expectations of a user in terms of ease of use, ease of navigation, responsiveness of buttons and links etc.  My aim was to ensure that user's would have a pleasant experience interacting with the site and that the overall display of content to the user was appropriate and appealing (clear, clean and uncluttered).
+
+1. View a list of restaurant reviews and navigate through the list with the pagination buttons, ensuring they were responsive and appealing to the user.
+2. Select a restaurant review to view, and view it in both portrait and landscape on a mobile device.
+3. Navigate to the About page and read the About content, ensuring that all text was clear and easy to read.
+4. Complete a request for collaboration form, ensuring that the submit button was responsive, that appropriate feedback is given when the user does something unwanted (e.g. doesnt add content to a field in the form), and that appropriate messaging is displayed to the user to let them know that the submission was successful.
+5. View a list of food recipes and navigate through the list with the pagination buttons, ensuring they were responsive and appealing to the user.
+6. Select a food recipe to view, and view it in both portrait and landscape on a mobile device.
+7. View a list of cocktail recipes and navigate through the list with the pagination buttons, ensuring they were responsive and appealing to the user.
+8. Select a cocktail recipe to view, and view it in both portrait and landscape on a mobile device.
+9. Sign up to the site and ensure that the Sign Up process and buttons work as expected and that appropriate feedback is provided when the user tries to do something not allowed (e.g. not adding a username or password).
+10. Sign in to the site and ensure that the user is provided with appropriate messaging to let them know their sign in was successful.
+11. Leave a comment on a recipe ensuring that the submit button is easy to use and responsive, and the user is provided with appropriate messaging to let them know their submission was successful.
+12. Edit a comment on a recipe ensuring that it is easy to do, that the buttons were responsive and that the messaging to the user is appropriate.
+13. Delete a comment on a recipe ensuring that appropriate status updates are provided to the user so they know what is happening.
+14. Sign out of the site and ensure that the user is provided with appropriate messaging to let them know they have successfully signed out.
+
+
+All input fields / forms were checked with both positive and negative tests to ensure that users could not submit empty fields, and that feedback to the user was appropriate.
+
+---
+
+## Automated Testing
+
+---
+
+## Browser Testing
+
+The site was tested on the below browsers, without issue:
+1. Chrome
+2. Safari
+
+---
+
+## Device Testing / Responsive Testing
+
+The site was tested throughout the developement process to ensure that it is fully responsive using chrome development tools.  Each page of the site was checked at each of the break points to ensure that the design and layout looked good.  I also tested the site at points between the usual breakpoints and discovered that after 576px and prior to 768px, the three featured images did not display well on the review_details, food_details and cocktail_details pages.  I therefore changed my code to ensure that only two images are displayed until the 768px breakpoint is reached.
+
+Testing was also performed on the following devices to ensure that the site was fully responsive:
+1. Samsung Galaxy Flip mobile phone.
+2. Samsung Galaxy Tab A7.
+3. Standard Laptop.
+4. Widescreen monitor.
+
+---
+
 ## Bugs
 
 Testing was performed throughout the development process, and I tried to fix bugs as soon as I observed them.  The following bugs were fixed during the development process:
 
 1. The sticky footer was hiding content on the page,  I resolved this by adding a height for the footer of 60px and padding to the bottom of the body of 60px.
-2. At one point i realised that there was no Precious button appearing on the second page of Restaurant Reviews.  This was because I had forgotton to add it.  I had added it to the Food Recipes and Cocktail Recipes pages but left it off the Restaurant Reviews, but it was quickly and easily resolved.
-3. Although I had set unapproved comments to be greyed out, I did not feel this was ovious, so I changed the parameter used from 'faded' to 'fw-light' and the greyed out comments were more obvious.
+2. At one point i realised that there was no Previous button appearing on the second page of Restaurant Reviews.  This was because I had forgotton to add it.  I had added it to the Food Recipes and Cocktail Recipes pages but left it off the Restaurant Reviews, but it was quickly and easily resolved.
+3. Although I had set unapproved comments to be greyed out, I did not feel this was obvious, so I changed the parameter used from 'faded' to 'fw-light' and the greyed out comments were more obviously greyed out.
 4. I had an extended 'Log In' link at the bottom of food recipes and cocktail recipes.  This was due to a spacing error in my code which I fixed.
-5. In addition to the manual testing that I performed above, i also asked a coupl ef potential site users to perform A/B testing.  At the time, I had styled most of my buttons (including the edit buttons for comments) with a grey colour.  This uncovered an issue whereby one of the users thought the button was greyed out, and therefore disabled.  I changed the style of the buttons as a result to avoid future confusion.
+5. In addition to the manual testing that I performed above, i also asked a couple of potential site users to perform A/B testing.  At the time, I had styled most of my buttons (including the edit buttons for comments) with a grey colour.  This uncovered an issue whereby one of the users thought the button was greyed out, and therefore disabled.  I changed the style of the buttons as a result to avoid future confusion.
 
 ---
 
@@ -180,10 +228,8 @@ Testing was performed throughout the development process, and I tried to fix bug
 
 - No errors were found when the code was passed through the [CI Python Linter](https://pep8ci.herokuapp.com/).  This checking was done manually by copying python code and pasting it into the validator.
 
-
-
-
 ---
+
 ## Lighthouse Reports
 
 ### Home Page
@@ -225,10 +271,5 @@ Testing was performed throughout the development process, and I tried to fix bug
 ### Sign Out Page
 
 ![Lighthouse Report - Sign Out Page](documentation/lighthouse_reports/SignOut_Page.png)
-
-
-
-
-
 
 ---
