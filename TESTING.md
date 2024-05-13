@@ -144,6 +144,14 @@ User Story [#21](https://github.com/Jem212Mac/the-gabby-gourmand/issues/21).
 
 ## Bugs
 
+Testing was performed throughout the development process, and I tried to fix bugs as soon as I observed them.  The following bugs were fixed during the development process:
+
+1. The sticky footer was hiding content on the page,  I resolved this by adding a height for the footer of 60px and padding to the bottom of the body of 60px.
+2. At one point i realised that there was no Precious button appearing on the second page of Restaurant Reviews.  This was because I had forgotton to add it.  I had added it to the Food Recipes and Cocktail Recipes pages but left it off the Restaurant Reviews, but it was quickly and easily resolved.
+3. Although I had set unapproved comments to be greyed out, I did not feel this was ovious, so I changed the parameter used from 'faded' to 'fw-light' and the greyed out comments were more obvious.
+4. I had an extended 'Log In' link at the bottom of food recipes and cocktail recipes.  This was due to a spacing error in my code which I fixed.
+5. In addition to the manual testing that I performed above, i also asked a coupl ef potential site users to perform A/B testing.  At the time, I had styled most of my buttons (including the edit buttons for comments) with a grey colour.  This uncovered an issue whereby one of the users thought the button was greyed out, and therefore disabled.  I changed the style of the buttons as a result to avoid future confusion.
+
 ---
 
 ## Validation:
