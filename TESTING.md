@@ -30,7 +30,7 @@ Usability was tested with the below user acceptance testing, sent to new users t
 
 ### HTML Validation:
 
-- [Full HTML Validation Report](documentation/validation/html_validation.pptx)
+- [Full HTML Validation Report](documentation/validation/html_validation.pdf)
 
 - No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator.
 
