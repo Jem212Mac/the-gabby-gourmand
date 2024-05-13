@@ -32,7 +32,7 @@ Usability was tested with the below user acceptance testing, sent to new users t
 
 - [Full HTML Validation Report](documentation/validation/html_validation.pdf)
 
-- No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator.
+- No errors or warnings were found when passing through the official [W3C](https://validator.w3.org/) validator, except for errors resulting from the use of Django Summernote.
 
 ### CSS Validation:
 
@@ -44,7 +44,7 @@ Usability was tested with the below user acceptance testing, sent to new users t
 
 - [Full JS Validation Report](documentation/validation/js_validation.png)
 
-- No errors or warning messages were found when passing through the official [JSHint](https://www.jshint.com/) validator, except for an error related to the use of bootstrap.
+- No errors or warning messages were found when passing through the official [JSHint](https://www.jshint.com/) validator, except for an error related to the use of Bootstrap.
 
 ### Python Validation:
 
