@@ -1,5 +1,6 @@
 # The Gabby Gourmand
 
+![The Gabby Gourmand](documentation/am_i_responsive.png)
 
 ## Features
 
