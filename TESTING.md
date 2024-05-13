@@ -26,6 +26,14 @@ User Story [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8) and Us
 | 14           | Check that a logged in site admin can reopen a draft food recipe, update it, and save it as published with django admin.       | Log in to django admin function with site admin credentials & click on a draft food recipe to view it.  Update the recipe detail, tick published, and save.          | Recipe is saved as published.                               | Passed |
 | 15           | Check that a logged in site admin can reopen a draft cocktail recipe, update it, and save it as published with django admin.   | Log in to django admin function with site admin credentials & click on a draft cocktail recipe to view it.  Update the recipe detail, tick published, and save.      | Recipe is saved as published.                               | Passed |
 
+User Story [#2](https://github.com/Jem212Mac/the-gabby-gourmand/issues/2).
+
+| Test Case ID | Test Objective (based on Acceptance Criteria)                                                   | Test Steps                                                                         | Expected Results            | Status |
+| ------------ | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------- | ------ |
+| 16           | Check that when a user clicks on a restaurant review, a detailed view of the post is displayed. | From the home page, click on a restaurant review title or image.                   | Review detail is displayed. | Passed |
+| 17           | Check that when a user clicks on a food recipe, a detailed view of the post is displayed.       | Navigate to the food recipes page.  Click on a food recipe title or image.         | Recipe detail is displayed. | Passed |
+| 18           | Check that when a user clicks on a cocktail recipe, a detailed view of the post is displayed.   | Navigate to the cocktail recipes page.  Click on a cocktail recipe title or image. | Recipe detail is displayed. | Passed |
+
 ---
 
 ## Bugs
