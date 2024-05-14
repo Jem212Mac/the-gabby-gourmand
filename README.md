@@ -13,7 +13,11 @@ Developed by [Jemima MacKenzie](https://github.com/Jem212Mac).
 This is a website intended to provide interested parties with a review of various restaurants.  The intended user of the site is someone who is interested in food (a foodie) who loves to dine out but also likes to cook and try new recipes.  The home page for the site provides the user with a list of restaurant reviews that they can look through to help them decide on where to dine out next, but the site also includes a page listing food recipes and a page listing cocktail recipes where users can leave comments.
 
 ## UX Design
-The target audience for the site would be foodies that potentially love to travel, to eat, and to cook and make cocktails.  They would likely be cultured and sophisticated people, and as such I wanted to style the site with a clean, clear, uncluttered and sophisticated design with a colour scheme that makes the site feel modern.  I chose a fairly muted colour pallete with mostly black, white and grey, but with an occasional pop of colour coming from pink headings and buttons.  I felt that this would provide the ideal backdrop for the colourful plates of food and cocktails that would be displayed in featured images.  At the outset of the project, I created the following wireframe designs using [Figma](https://www.figma.com/):
+The target audience for the site is anyone that loves food, and loves to talk about food; foodies that potentially love to travel, to eat, and to cook and make cocktails.  They would likely be cultured and sophisticated people, and as such I wanted to style the site with a clean, clear, uncluttered, and sophisticated design with a colour scheme that makes the site feel modern.  I chose a fairly muted colour scheme with mostly black, white and grey, but with an occasional pop of colour coming from magenta headings and buttons.  I felt that this would provide the ideal backdrop for the colourful plates of food and cocktails that would be displayed in featured images.  
+
+![Color Scheme](documentation/colour_scheme.png)
+
+At the outset of the project, I created the following wireframe designs using [Figma](https://www.figma.com/):
 
 ![Desktop List Screens](documentation/wireframes/Desktop_List_Screens.png)
 ![Mobile List and About Screens](documentation/wireframes/Mobile_List_About_Screens.png)
@@ -23,7 +27,7 @@ The target audience for the site would be foodies that potentially love to trave
 
 ## Database Schema
 
-The planning and design of the wireframes helped me to decide on the database schema I would need, and this was created using [LucidChart](https://www.lucidchart.com/), as shown below:
+The planning and design of the wireframes helped me to decide on the database schema I would need, and this was created using [LucidChart](https://www.lucidchart.com/):
 
 ![Gabby Gourmand ERD](documentation/Gabby_Gourmand_ERD.jpeg)
 
@@ -35,14 +39,14 @@ In order to plan the project, I used agile methodologies.  I created a project k
 
  - Epic 1: Create a website thats displays restaurant reviews to allow users to plan their next restaurant visit.  Includes user stories [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8), [#13](https://github.com/Jem212Mac/the-gabby-gourmand/issues/13), [#9](https://github.com/Jem212Mac/the-gabby-gourmand/issues/9), and [#2](https://github.com/Jem212Mac/the-gabby-gourmand/issues/2).
  - Epic 2: Create a website that displays food and cocktail recipes to allow users to plan their next meal / cocktail.  Includes user stories [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8), [#11](https://github.com/Jem212Mac/the-gabby-gourmand/issues/11), [#12](https://github.com/Jem212Mac/the-gabby-gourmand/issues/12), [#9](https://github.com/Jem212Mac/the-gabby-gourmand/issues/9) and [#2](https://github.com/Jem212Mac/the-gabby-gourmand/issues/2).
- - Epic 3: Create a website that allows users to comments on recipe's and to interact with each other through blog comments.  Includes user stories [#4](https://github.com/Jem212Mac/the-gabby-gourmand/issues/4), [#3](https://github.com/Jem212Mac/the-gabby-gourmand/issues/3), [#6](https://github.com/Jem212Mac/the-gabby-gourmand/issues/6), [#7](https://github.com/Jem212Mac/the-gabby-gourmand/issues/7) [#10](https://github.com/Jem212Mac/the-gabby-gourmand/issues/10) and [#5](https://github.com/Jem212Mac/the-gabby-gourmand/issues/5).
+ - Epic 3: Create a website that allows users to comment on recipes and to interact with each other through blog comments.  Includes user stories [#4](https://github.com/Jem212Mac/the-gabby-gourmand/issues/4), [#3](https://github.com/Jem212Mac/the-gabby-gourmand/issues/3), [#6](https://github.com/Jem212Mac/the-gabby-gourmand/issues/6), [#7](https://github.com/Jem212Mac/the-gabby-gourmand/issues/7) [#10](https://github.com/Jem212Mac/the-gabby-gourmand/issues/10) and [#5](https://github.com/Jem212Mac/the-gabby-gourmand/issues/5).
  - Epic 4: Create a website that allows restaurant owners to request reviews and users to collaborate with the site owner.  Includes user stories [#14](https://github.com/Jem212Mac/the-gabby-gourmand/issues/14), [#21](https://github.com/Jem212Mac/the-gabby-gourmand/issues/21), [#20](https://github.com/Jem212Mac/the-gabby-gourmand/issues/20), and [#22](https://github.com/Jem212Mac/the-gabby-gourmand/issues/22).
 
-I decided on two iterations for the project.  My main aim for the first iteration would be to complete most of the user stories, while the second iteration would focus more on styling the website, testing the website and completing documentation.  I used MoSCow prioritisation to prioritise the user stories and tasks in each iteration.  I estimated user stories and tasks based on the following user story since I thought it was one of the smallest pieces of work to be undertaken.  Giving this an estimate of one story point, I estimated other user stories relative to this one using a Fibonnaci sequence.
+I decided on two iterations for the project.  My main aim for the first iteration was to complete most of the user stories, while the second iteration would focus more on styling the website, testing the website and completing documentation.  I used MoSCow prioritisation to prioritise the user stories and tasks in each iteration.  I estimated user stories and tasks based on the following user story since I thought it was one of the smallest pieces of work to be undertaken.  Giving this an estimate of one story point, I estimated other user stories relative to this one using a Fibonnaci sequence.
 
 ![Baseline for estimates](documentation/kanban/Baseline_for_estimates.png)
 
-Since I had no 'team velocity' measures to use to give an indication of how many story points I could complete in an iteration, I estimated, based on my baseline user story, that I could complete 50 story points per iteration.  As such, I ensured that iteration one included no more that 30 story points (60%) that were MUST HAVE or COULD HAVE priorities.  The kanban board for iteration one at the outset looked like this:
+Since I had no 'velocity' measures to use to give an indication of how many story points I could complete in an iteration, I estimated, based on my baseline user story, that I could complete 50 story points per iteration.  As such, I ensured that iteration one included no more that 30 story points (60%) that were MUST HAVE or COULD HAVE priorities.  The kanban board for iteration one at the outset looked like this:
 
 ![](documentation/kanban/Iteration1-Must_Should.png)
 ![](documentation/kanban/Iteration1-Could_Wont.png)
@@ -54,7 +58,7 @@ Towards the end of Iteration 1, I found that I had completed all of the tasks an
 
 These additional user stories totalled 5 story points, so by the end of iteration 1 I had completed 55 story points, and this provided me with a 'velocity' measure that I could use for Iteration 2.
 
-For Iteration 2, I included user stories totally 55 story points, with MUST HAVE and COULD HAVE priorities totalling 32 story points (less than 60%):
+For Iteration 2, I included user stories totalling 55 story points, with MUST HAVE and COULD HAVE priorities totalling 32 story points (less than 60%):
 
 ![](documentation/kanban/Iteration_2_all.png)
 
@@ -86,17 +90,18 @@ At the end of Iteration 2, however, I have found that I did not have time to com
     + [Pip3](https://pypi.org/project/pip/): the package manager used to install the dependencies.
     + [Gunicorn](https://gunicorn.org/): the webserver used to run the website.
     + [Django-allauth](https://django-allauth.readthedocs.io/en/latest/): the authentication library used to create the user accounts.
-    + [Django-crispy-forms](https://django-cryptography.readthedocs.io/en/latest/): was used to control the rendering behavior of Django forms.
+    + [Django-crispy-forms](https://django-cryptography.readthedocs.io/en/latest/) was used to control the rendering behavior of Django forms.
     + [Heroku](https://id.heroku.com/login): the cloud platform used to host the website.
     + [GitHub](https://github.com/): used to host the website's source code.
     + Gitpod: the IDE used to develop the website.
-    + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
-    + [Font Awesome](https://fontawesome.com/): was used to create the icons used in the website.
-    + [LucdChart](https://www.lucidchart.com/) was used to create the ERD.
-    + [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
-    + [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
-    + [JShint](https://jshint.com/): was used to validate JS code for the website.
-    + [PEP8](https://pep8ci.herokuapp.com/): was used to validate Python code for the website.
+    + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/) was used to debug the website.
+    + [Font Awesome](https://fontawesome.com/) was used to create the icons used in the website.
+    + [Coolers](https://coolors.co/) was used to generate the colour scheme for the website.
+    + [LucidChart](https://www.lucidchart.com/) was used to create the ERD.
+    + [W3C Validator](https://validator.w3.org/) was used to validate HTML5 code for the website.
+    + [W3C CSS validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS code for the website.
+    + [JShint](https://jshint.com/) was used to validate JS code for the website.
+    + [PEP8](https://pep8ci.herokuapp.com/) was used to validate Python code for the website.
     + [Table to Markdown](https://tabletomarkdown.com/) was used to convert excel tables into markdown for the TESTING.md file.
 
 ## Local Development
