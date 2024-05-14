@@ -17,7 +17,7 @@ The target audience for the site is anyone that loves food, and loves to talk ab
 
 ![Color Scheme](documentation/colour_scheme.png)
 
-In terms of typography, I chose one clean, easy to read style for most of the test (Raleway) and two cursive styles that were a bit more playful and adventurous for the headings (Glass Antiqua and Reenie Beanie):
+In terms of typography, I chose one clean, easy to read, style for most of the test (Raleway) and two cursive styles that were a bit more playful and adventurous for the headings (Glass Antiqua and Reenie Beanie):
 
 ![Raleway](documentation/raleway.png)
 ![Glass Antiqua](documentation/glass_antiqua.png)
@@ -102,8 +102,12 @@ At the end of Iteration 2, however, I have found that I did not have time to com
     + Gitpod: the IDE used to develop the website.
     + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/) was used to debug the website.
     + [Font Awesome](https://fontawesome.com/) was used to create the icons used in the website.
+    + [Google Fonts](https://fonts.google.com/) was used to select fonts for the website.
+    + [Favicon.io](https://favicon.io/) was used to generate a favicon for the website.
     + [Coolers](https://coolors.co/) was used to generate the colour scheme for the website.
     + [LucidChart](https://www.lucidchart.com/) was used to create the ERD.
+    + [Figma](https://www.figma.com/) was used to create wireframes for the site.
+    + [Cloudinary](https://cloudinary.com/) was used to store featured images for the website.
     + [W3C Validator](https://validator.w3.org/) was used to validate HTML5 code for the website.
     + [W3C CSS validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS code for the website.
     + [JShint](https://jshint.com/) was used to validate JS code for the website.
