@@ -62,11 +62,48 @@ At the end of Iteration 2, however, I have found that I did not have time to com
 
 ![](documentation/kanban/Wont_Do.png)
 
+## Technologies used
+
+- ### Languages:
+    
+    + [Python 3.12.2](https://www.python.org/downloads/release/python-385/): the primary language used to develop the server-side of the website.
+    + [JS](https://www.javascript.com/): the primary language used to develop interactive components of the website.
+    + [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): the markup language used to create the website.
+    + [CSS](https://developer.mozilla.org/en-US/docs/Web/css): the styling language used to style the website.
+
+- ### Frameworks and libraries:
+
+    + [Django](https://www.djangoproject.com/): python framework used to create all the logic.
+    + [Bootstrap](https://getbootstrap.com/): used for styling the project.
+
+- ### Databases:
+
+    + Code Institute PostgreSQL Database: database used to store all the data.
+
+- ### Other tools:
+
+    + [Git](https://git-scm.com/): the version control system used to manage the code.
+    + [Pip3](https://pypi.org/project/pip/): the package manager used to install the dependencies.
+    + [Gunicorn](https://gunicorn.org/): the webserver used to run the website.
+    + [Django-allauth](https://django-allauth.readthedocs.io/en/latest/): the authentication library used to create the user accounts.
+    + [Django-crispy-forms](https://django-cryptography.readthedocs.io/en/latest/): was used to control the rendering behavior of Django forms.
+    + [Heroku](https://id.heroku.com/login): the cloud platform used to host the website.
+    + [GitHub](https://github.com/): used to host the website's source code.
+    + Gitpod: the IDE used to develop the website.
+    + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
+    + [Font Awesome](https://fontawesome.com/): was used to create the icons used in the website.
+    + [LucdChart](https://www.lucidchart.com/) was used to create the ERD.
+    + [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
+    + [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
+    + [JShint](https://jshint.com/): was used to validate JS code for the website.
+    + [PEP8](https://pep8ci.herokuapp.com/): was used to validate Python code for the website.
+    + [Table to Markdown](https://tabletomarkdown.com/) was used to convert excel tables into markdown for the TESTING.md file.
+
 ## Local Development
 
 
 ## Testing
-For details of all testing performed, including validator testing, manual testing, and automated testing, please see TESTING.md.  This also includes details of bugs found and resolved throughout the development process.
+For details of all testing performed, including validator testing, manual testing, and automated testing, please see [TESTING.md](TESTING.md).  This also includes details of bugs found and resolved throughout the development process.
 
 ## Forking
 
