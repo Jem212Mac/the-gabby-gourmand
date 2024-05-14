@@ -113,6 +113,7 @@ At the end of Iteration 2, however, I found that I did not have time to complete
     + [LucidChart](https://www.lucidchart.com/) was used to create the ERD.
     + [Figma](https://www.figma.com/) was used to create wireframes for the site.
     + [Cloudinary](https://cloudinary.com/) was used to store featured images for the website.
+    + [Am I Responsive](https://ui.dev/amiresponsive?) was used to create the headline image for the README.md
     + [W3C Validator](https://validator.w3.org/) was used to validate HTML5 code for the website.
     + [W3C CSS validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS code for the website.
     + [JShint](https://jshint.com/) was used to validate JS code for the website.
@@ -131,6 +132,18 @@ If you would like to work on this code you can click on the repository here (htt
 
 ## Deployment
 
+The application was deployed to Heroku.  In order to deploy to Heroku, the following steps were performed:
+
+1. 'pip3 install gunicorn~=20.1' was used in the IDE terminal to install a production ready webserver for Heroku.
+2. The command 'Pip3 freeze --local > requirements.txt' was used in the IDE terminal in order to create a requirements.txt file which included the dependencies for the project.  Heroku needs this file to install the required dependencies before the application is run.
+3. A Procfile containing 'web: gunicorn gabbygourmand.wsgi' was created in the root of the project directory.
+4. ,'.herokuapp.com' was added to the allowed hosts in the project settings.py file.
+5. I created a new Heroku account here: (https://id.heroku.com/login).
+6. From the Heroku dashboard I clicked 'Create new app' and input a unique name for the app, a region, and clicked 'create app'.
+7. I clicked on the Settings tab and went to the Config Vars section.
+8. I added the appropriate cloudinary and database url details to Config Vars.
+9. I clicked on the 'Deploy' tab, chose Github as my deployment method, and searched for my github repository to connect.
+10. For this project I chose to manually deploy at regular intervals.
 
 ## Future Enhancements
 
