@@ -105,7 +105,6 @@ At the end of Iteration 2, however, I found that I did not have time to complete
     + [Django-crispy-forms](https://django-cryptography.readthedocs.io/en/latest/) was used to control the rendering behavior of Django forms.
     + [Heroku](https://id.heroku.com/login): the cloud platform used to host the website.
     + [GitHub](https://github.com/): used to host the website's source code.
-    + Gitpod: the IDE used to develop the website.
     + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/) was used to debug the website.
     + [Font Awesome](https://fontawesome.com/) was used to create the icons used in the website.
     + [Google Fonts](https://fonts.google.com/) was used to select fonts for the website.
@@ -121,18 +120,29 @@ At the end of Iteration 2, however, I found that I did not have time to complete
     + [Table to Markdown](https://tabletomarkdown.com/) was used to convert excel tables into markdown for the TESTING.md file.
 
 ## Local Development
-
+Gitpod was used as the IDE for local development of the application and GitHub was used for version control.
 
 ## Testing
 For details of all testing performed, including validator testing, manual testing, and automated testing, please see [TESTING.md](TESTING.md).  This also includes details of bugs found and resolved throughout the development process.
 
 ## Forking
 
+If you would like to work on this code you can click on the repository here (https://github.com/Jem212Mac/the-gabby-gourmand) and click on 'Fork' to create your own fork of the code to work on.
 
 ## Deployment
 
 
 ## Future Enhancements
 
+Given more time there are a number of enhancements I would like to make to the website:
+1. I would use a modal or popup to edit comments to free up some space on the recipe pages.
+2. I would add search functionality to the navbar to allow users to search for restaurants or recipes.
+3. I would add 'forgot password' functionality to the Sign In page to allow a user to retrieve a new password via email address, or setup a new password.
+4. I would allow Sign Up or Sign In with social media accounts.
+5. I would add ggogle maps iFrames to show where restaurants are located.
+
 
 ## Credits & Acknowledgements
+
+ - On a number of occasions I contacted Tutor Support to help me better understand certain coding practices and techniques better (e.g. using bootstrap cards) and I would like to thank them for their help and support.
+ - I would like to thank my mentor, Iuliia Konovalova, for her guidance during this project.  I really think her advice helped me from the outset.
