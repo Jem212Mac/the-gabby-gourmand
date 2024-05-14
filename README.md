@@ -17,6 +17,12 @@ The target audience for the site is anyone that loves food, and loves to talk ab
 
 ![Color Scheme](documentation/colour_scheme.png)
 
+In terms of typography, I chose one clean, easy to read style for most of the test (Raleway) and two cursive styles that were a bit more playful and adventurous for the headings (Glass Antiqua and Reenie Beanie):
+
+![Raleway](documentation/raleway.png)
+![Glass Antiqua](documentation/glass_antiqua.png)
+![Reenie Beanie](documentation/reenie_beanie.png)
+
 At the outset of the project, I created the following wireframe designs using [Figma](https://www.figma.com/):
 
 ![Desktop List Screens](documentation/wireframes/Desktop_List_Screens.png)
