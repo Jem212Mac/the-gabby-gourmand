@@ -58,7 +58,7 @@ I decided on two iterations for the project.  My main aim for the first iteratio
 
 ![Baseline for estimates](documentation/kanban/Baseline_for_estimates.png)
 
-Since I had no 'velocity' measures to use to give an indication of how many story points I could complete in an iteration, I estimated, based on my baseline user story, that I could complete 50 story points per iteration.  As such, I ensured that iteration one included no more that 30 story points (60%) that were MUST HAVE or SHOULD HAVE priorities.  The kanban board for iteration one at the outset looked like this:
+Since I had no 'velocity' measures to use to give an indication of how many story points I could complete in an iteration, I estimated, based on my baseline user story, that I could complete 50 story points per iteration.  As such, I ensured that iteration one included no more than 30 story points (60%) that were MUST HAVE or SHOULD HAVE priorities.  The kanban board for iteration one at the outset looked like this:
 
 ![](documentation/kanban/Iteration1-Must_Should.png)
 ![](documentation/kanban/Iteration1-Could_Wont.png)
@@ -152,7 +152,7 @@ Given more time there are a number of enhancements I would like to make to the w
 2. I would add search functionality to the navbar to allow users to search for restaurants or recipes.
 3. I would add 'forgot password' functionality to the Sign In page to allow a user to retrieve a new password via email address, or setup a new password.
 4. I would allow Sign Up or Sign In with social media accounts.
-5. I would add ggogle maps iFrames to show where restaurants are located.
+5. I would add google maps iFrames to show where restaurants are located.
 
 
 ## Credits & Acknowledgements
