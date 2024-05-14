@@ -168,6 +168,20 @@ All input fields / forms were checked with both positive and negative tests to e
 
 ## Automated Testing
 
+Automated tests were created for both the About app and the Blog app.  Tests were created in seperate files for each of the models, as follows, and I deleted the test.py files for each app.
+
+About app:
+ - test_forms.py
+ - test_views.py
+
+Blog app:
+ - test_forms.py
+ - test_views.py
+ - test_urls.py
+
+Automated tests were run against a development database db.sqlite3, rather than the production database.  For this project, I left the creation of automated tests until the end of the project and then found I had limited time to devote to this.  Based on my experience, in future projects I will create automated tests as I go, and I hope to develop my skills in test automation further as a result.
+
+
 ---
 
 ## Browser Testing

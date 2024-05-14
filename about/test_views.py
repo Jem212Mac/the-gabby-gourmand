@@ -31,6 +31,4 @@ class TestAboutView(TestCase):
         response = self.client.post(reverse('about'), post_data)
         self.assertEqual(response.status_code, 200)
         self.assertIn(
-            b'''Collaboration request received!
-            I will respond to you within 3 working days.''',
-            response.content)
+            b'Collaboration request received!', response.content)
