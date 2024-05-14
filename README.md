@@ -10,7 +10,13 @@ Repository: [GitHub Repo](https://github.com/Jem212Mac/the-gabby-gourmand)
 Developed by [Jemima MacKenzie](https://github.com/Jem212Mac).
 
 ## About
-This is a website intended to provide interested parties with a review of various restaurants.  The intended user of the site is someone who is interested in food (a foodie) who loves to dine out but also likes to cook and try new recipes.  The home page for the site provides the user with a list of restaurant reviews that they can look through to help them decide on where to dine out next, but the site also includes a page listing food recipes and a page listing cocktail recipes where users can leave comments.
+This is a website intended to provide interested parties with a review of various restaurants.  The intended user of the site is someone who is interested in food (a foodie) who loves to dine out but also likes to cook and try new recipes.  The home page for the site provides the user with a list of restaurant reviews that they can look through to help them decide on where to dine out next, but the site also includes a page listing food recipes and a page listing cocktail recipes where users can leave comments.  See selected screenshots (on different viewport sizes) below:
+
+![](documentation/screen_1.png)
+![](documentation/screen_2.png)
+![](documentation/screen_3.png)
+![](documentation/screen_4.png)
+![](documentation/screen_5.png)
 
 ## UX Design
 The target audience for the site is anyone that loves food, and loves to talk about food; foodies that potentially love to travel, to eat, and to cook and make cocktails.  They would likely be cultured and sophisticated people, and as such I wanted to style the site with a clean, clear, uncluttered, and sophisticated design with a colour scheme that makes the site feel modern.  I chose a fairly muted colour scheme with mostly black, white and grey, but with an occasional pop of colour coming from magenta headings and buttons.  I felt that this would provide the ideal backdrop for the colourful plates of food and cocktails that would be displayed in featured images.  
