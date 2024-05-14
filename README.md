@@ -21,7 +21,7 @@ The target audience for the site would be foodies that potentially love to trave
 ![Desktop Post Screens](documentation/wireframes/Desktop_Post_Screens.png)
 ![Mobile Post Screens](documentation/wireframes/Mobile_Post_Screens.png)
 
-## Database Scheme
+## Database Schema
 
 The planning and design of the wireframes helped me to decide on the database schema I would need, and this was created using [LucidChart](https://www.lucidchart.com/), as shown below:
 
@@ -33,6 +33,10 @@ As detailed above, the main database models for the site are the review and reci
 
 In order to plan the project, I used agile methodologies.  I created a project kanban board and populated it with a number of user stories (see below), based on the following epics.
 
+ - Epic 1: Create a website thats displays restaurant reviews to allow users to plan their next restaurant visit.  Includes user stories [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8), [#13](https://github.com/Jem212Mac/the-gabby-gourmand/issues/13), [#9](https://github.com/Jem212Mac/the-gabby-gourmand/issues/9), and [#2](https://github.com/Jem212Mac/the-gabby-gourmand/issues/2).
+ - Epic 2: Create a website that displays food and cocktail recipes to allow users to plan their next meal / cocktail.  Includes user stories [#8](https://github.com/Jem212Mac/the-gabby-gourmand/issues/8), [#11](https://github.com/Jem212Mac/the-gabby-gourmand/issues/11), [#12](https://github.com/Jem212Mac/the-gabby-gourmand/issues/12), [#9](https://github.com/Jem212Mac/the-gabby-gourmand/issues/9) and [#2](https://github.com/Jem212Mac/the-gabby-gourmand/issues/2).
+ - Epic 3: Create a website that allows users to comments on recipe's and to interact with each other through blog comments.  Includes user stories [#4](https://github.com/Jem212Mac/the-gabby-gourmand/issues/4), [#3](https://github.com/Jem212Mac/the-gabby-gourmand/issues/3), [#6](https://github.com/Jem212Mac/the-gabby-gourmand/issues/6), [#7](https://github.com/Jem212Mac/the-gabby-gourmand/issues/7) [#10](https://github.com/Jem212Mac/the-gabby-gourmand/issues/10) and [#5](https://github.com/Jem212Mac/the-gabby-gourmand/issues/5).
+ - Epic 4: Create a website that allows restaurant owners to request reviews and users to collaborate with the site owner.  Includes user stories [#14](https://github.com/Jem212Mac/the-gabby-gourmand/issues/14), [#21](https://github.com/Jem212Mac/the-gabby-gourmand/issues/21), [#20](https://github.com/Jem212Mac/the-gabby-gourmand/issues/20), and [#22](https://github.com/Jem212Mac/the-gabby-gourmand/issues/22).
 
 I decided on two iterations for the project.  My main aim for the first iteration would be to complete most of the user stories, while the second iteration would focus more on styling the website, testing the website and completing documentation.  I used MoSCow prioritisation to prioritise the user stories and tasks in each iteration.  I estimated user stories and tasks based on the following user story since I thought it was one of the smallest pieces of work to be undertaken.  Giving this an estimate of one story point, I estimated other user stories relative to this one using a Fibonnaci sequence.
 
@@ -49,6 +53,14 @@ Towards the end of Iteration 1, I found that I had completed all of the tasks an
 ![](documentation/kanban/Iteration1-Extra_2.png)
 
 These additional user stories totalled 5 story points, so by the end of iteration 1 I had completed 55 story points, and this provided me with a 'velocity' measure that I could use for Iteration 2.
+
+For Iteration 2, I included user stories totally 55 story points, with MUST HAVE and COULD HAVE priorities totalling 32 story points (less than 60%):
+
+![](documentation/kanban/Iteration_2_all.png)
+
+At the end of Iteration 2, however, I have found that I did not have time to complete the following user stories, and I marked these as WONT DO and moved them back to the backlog.  In Iteration 2 I completed 48 story points.
+
+![](documentation/kanban/Wont_Do.png)
 
 ## Local Development
 
