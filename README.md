@@ -23,7 +23,7 @@ The target audience for the site is anyone that loves food, and loves to talk ab
 
 ![Color Scheme](documentation/colour_scheme.png)
 
-In terms of typography, I chose one clean, easy to read, style for most of the test (Raleway) and two cursive styles that were a bit more playful and adventurous for the headings (Glass Antiqua and Reenie Beanie):
+In terms of typography, I chose one clean, easy to read, style for most of the text (Raleway) and two cursive styles that were a bit more playful and adventurous for the headings (Glass Antiqua and Reenie Beanie):
 
 ![Raleway](documentation/raleway.png)
 ![Glass Antiqua](documentation/glass_antiqua.png)
@@ -58,7 +58,7 @@ I decided on two iterations for the project.  My main aim for the first iteratio
 
 ![Baseline for estimates](documentation/kanban/Baseline_for_estimates.png)
 
-Since I had no 'velocity' measures to use to give an indication of how many story points I could complete in an iteration, I estimated, based on my baseline user story, that I could complete 50 story points per iteration.  As such, I ensured that iteration one included no more that 30 story points (60%) that were MUST HAVE or COULD HAVE priorities.  The kanban board for iteration one at the outset looked like this:
+Since I had no 'velocity' measures to use to give an indication of how many story points I could complete in an iteration, I estimated, based on my baseline user story, that I could complete 50 story points per iteration.  As such, I ensured that iteration one included no more that 30 story points (60%) that were MUST HAVE or SHOULD HAVE priorities.  The kanban board for iteration one at the outset looked like this:
 
 ![](documentation/kanban/Iteration1-Must_Should.png)
 ![](documentation/kanban/Iteration1-Could_Wont.png)
@@ -70,11 +70,11 @@ Towards the end of Iteration 1, I found that I had completed all of the tasks an
 
 These additional user stories totalled 5 story points, so by the end of iteration 1 I had completed 55 story points, and this provided me with a 'velocity' measure that I could use for Iteration 2.
 
-For Iteration 2, I included user stories totalling 55 story points, with MUST HAVE and COULD HAVE priorities totalling 32 story points (less than 60%):
+For Iteration 2, I included user stories totalling 55 story points, with MUST HAVE and SHOULD HAVE priorities totalling 32 story points (less than 60%):
 
 ![](documentation/kanban/Iteration_2_all.png)
 
-At the end of Iteration 2, however, I have found that I did not have time to complete the following user stories, and I marked these as WONT DO and moved them back to the backlog.  In Iteration 2 I completed 48 story points.
+At the end of Iteration 2, however, I found that I did not have time to complete the following user stories, and I marked these as WONT DO and moved them back to the backlog.  In Iteration 2, I completed 48 story points.
 
 ![](documentation/kanban/Wont_Do.png)
 

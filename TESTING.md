@@ -144,7 +144,7 @@ User Story [#21](https://github.com/Jem212Mac/the-gabby-gourmand/issues/21).
 
 ## Usability / User Acceptance Testing
 
-In addition to the testing I performed throughout the developement process which was primarily based around the user stories and the accpetance criteria (as detailed above), I also performed some exploratory testing based on the following user journeys with the goal of ensuring that the site would meet the expectations of a user in terms of ease of use, ease of navigation, responsiveness of buttons and links etc.  My aim was to ensure that user's would have a pleasant experience interacting with the site and that the overall display of content to the user was appropriate and appealing (clear, clean and uncluttered).
+In addition to the testing I performed throughout the developement process which was primarily based around the user stories and the acceptance criteria (as detailed above), I also performed some exploratory testing based on the following user journeys with the goal of ensuring that the site would meet the expectations of a user in terms of ease of use, ease of navigation, responsiveness of buttons and links etc.  My aim was to ensure that user's would have a pleasant experience interacting with the site and that the overall display of content to the user was appropriate and appealing (clear, clean and uncluttered).
 
 1. View a list of restaurant reviews and navigate through the list with the pagination buttons, ensuring they were responsive and appealing to the user.
 2. Select a restaurant review to view, and view it in both portrait and landscape on a mobile device.
